@@ -1,0 +1,25 @@
+.Gym {
+    width: 80vw;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.Gym .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Gym .popover {
+    margin: 10px;
+}
+
+.Gym .exercises {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vw;
+}
+
+.Gym .exercises * {
+    align-self: baseline;
+}

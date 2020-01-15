@@ -1,0 +1,9 @@
+.Exercise .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Exercise .info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

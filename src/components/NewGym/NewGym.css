@@ -1,0 +1,9 @@
+.NewGym {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.NewGym button {
+    margin: 10px 0;
+}

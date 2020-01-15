@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import GymList from './containers/GymList/GymList'
+import './App.css'
+import { AppBar, Typography } from '@material-ui/core'
+import { MuiPickersUtilsProvider } from '@material-ui/pickers'
+import DateFnsUtils from '@date-io/date-fns'
+import ruLocale from 'date-fns/locale/ru'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <MuiPickersUtilsProvider utils={DateFnsUtils} locale={ruLocale}>
+      <AppBar position="static" className="App">
+        <Typography variant="h5" color="inherit">
+          GymBook
+        </Typography>
+      </AppBar>
+      <GymList />
+    </MuiPickersUtilsProvider>   
+  )
 }
 
-export default App;
+export default App
